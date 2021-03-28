@@ -8,7 +8,6 @@
 }
 
 :root{
-  --width-container: 300px;
   --pos-left-hair: 150px;
   --post-left-forehead: 102px;
   --pos-right-eye: 25px; 
@@ -34,7 +33,7 @@ body{
 }
 
 .container{
-  width: var(--width-container);
+  width: 300px;
   height: 400px;
   margin: 0 auto ;
   margin-top: 80px;
@@ -136,7 +135,7 @@ body{
   bottom: calc(var(--pos-bottom-nose) + 1px);
   right: 37px;
   width: 45px;
-  height: 29px;
+  height: 27px;
   background-color: var(--skin-color);
   border: 3px solid transparent;
   border-left: none;
@@ -193,13 +192,12 @@ body{
   bottom: 3px;
   right: 40px;
   background-color: inherit;
-  width: 90px;
+  width: 85px;
   height: 40px;
   display: block;
   border: 3px solid transparent; 
   border-bottom: 3px solid black;
   border-right: none;
-  border-radius: 11%;
   transform: rotate(8deg);
 }
 
@@ -207,7 +205,7 @@ body{
   content: '';
   position: absolute;
   top: 6px;
-  left: -6px;
+  left: -3px;
   background-color: inherit;
   width: 20px;
   height: 20px;
@@ -216,7 +214,7 @@ body{
   border-left: 3px solid black;
   border-top: 3px solid black;
   border-radius: 50%;
-  transform: rotate(-16deg);
+  transform: rotate(-14deg);
 }
 
 .smile{
@@ -314,10 +312,10 @@ body{
   top: -8px;
   left: -24px;
   border-radius: 50%;
-  background-color: var(--bg-color);
   border: 3px solid transparent;
   transform: rotate(5deg);
   border-right: 3px solid black;
+  z-index: 10;
 }
 
 .neck::before{
@@ -385,36 +383,37 @@ body{
 }
 
 .shirt-left{
-  width: 100px;
+  width: 90px;
   height: 44px;
   background-color: var(--shirt-color);
   position: absolute;
   top: 300px;
-  left: 80px;
+  left: 93px;
   transform: rotate(21deg);
   border: 3px solid transparent;
   border-right: 3px solid black;
-  border-left: 3px solid black;
 }
 
 .shirt-left::after{
   content: '';
   position: absolute;
   top: -15px;
-  left: -3px;
-  width: 22px;
-  height: inherit;
+  left: -12px;
+  width: 15px;
+  height: 53px;
   background-color: inherit;
-  border-radius: 15px 0 0 0;
+  border-radius: 18px 0 0 0;
   border-top: 3px solid black;
   border-left: 3px solid black;
+  transform: rotate(5deg);
+  z-index: 10;
 }
 
 .shirt-left::before{
   content: '';
   position: absolute;
-  top: -20px;
-  left: 7px;
+  top: -19px;
+  left: 3px;
   width: 90px;
   height: 17px;
   background-color: var(--skin-color);
@@ -469,7 +468,7 @@ body{
   content: '';
   position: absolute;
   top: -23px;
-  left: 34px;
+  left: 39px;
   width: 100px;
   height: 20px;
   background-color: transparent;
@@ -494,7 +493,7 @@ body{
   z-index: -11;
 }
 
-.chest{
+.body{
   width: 194px;
   height: 180px;
   position: absolute;
