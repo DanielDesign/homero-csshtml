@@ -33,14 +33,23 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-image: url('https://p4.wallpaperbetter.com/wallpaper/231/748/927/cartoon-the-simpsons-simpsons-bart-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw; */
+  position: relative;
 }
 
 .container{
   width: 300px;
   height: 400px;
-  margin-top: 90px;
+  margin-top: 180px;
   border: 1px solid black;
   position: relative;
+  overflow: hidden;
+  opacity: 0.8;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.88);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.88);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.88);
 }
 
 .hair-top{
@@ -146,7 +155,7 @@ body{
 }
 
 .cheeck{
-  width: 150px;
+  width: 140px;
   height: 100px;
   background-color: var(--skin-color);
   position: absolute;
@@ -288,4 +297,240 @@ body{
   border-top: 3px solid black;
   border-right: 3px solid black;
 }
+
+.neck{
+  width: 100px;
+  height: 85px;
+  background-color: var(--skin-color);
+  position: absolute;
+  /* top: 158px; */
+  top: 243px;
+  left: 115px;
+  /* bottom: 20px; */
+  transform: rotate(8deg);
+  z-index: -1;
+  border-left: 3px solid black;
+}
+
+.neck::after{
+  content: '';
+  width: 18px;
+  height: 85px;
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: -24px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  border: 3px solid transparent;
+  transform: rotate(5deg);
+  border-right: 3px solid black;
+}
+
+.neck::before{
+  content: '';
+  width: 10px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: -12px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid none;
+  border-left: 3px solid black;
+  transform: rotate(-6deg);
+}
+
+.neck-bottom{
+  position: absolute;
+  width: 35px;
+  height: 60px;
+  top: 314px;
+  left: 194px;
+  background-color: var(--skin-color);
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-radius: 50%;
+  transform: rotate(-28deg);
+}
+
+.v-neck{
+  width: 50px;
+  height: 38px;
+  background-color: transparent;
+  position: absolute;
+  top: 306px;
+  left: 186px;
+  transform: rotate(65deg) skew(30deg, 350deg);
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.v-neck::after{
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  content: '';
+  width: 10px;
+  height: 50px;
+  background-color: var(--shirt-color);
+  transform: rotate(91deg);
+  z-index: 100;
+}
+
+.v-neck::before{
+  position: absolute;
+  top: 13px;
+  right: -23px;
+  content: '';
+  width: 20px;
+  height: 30px;
+  background-color: var(--shirt-color);
+  transform: rotate(-1deg);
+  z-index: 100;
+}
+
+.shirt-left{
+  width: 100px;
+  height: 44px;
+  background-color: var(--shirt-color);
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  transform: rotate(21deg);
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  /* border-bottom: 3px solid black; */
+}
+
+.shirt-left::after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -3px;
+  width: 22px;
+  height: inherit;
+  background-color: inherit;
+  border-radius: 15px 0 0 0;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.shirt-left::before{
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 7px;
+  width: 90px;
+  height: 17px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-bottom: 3px solid black;
+  z-index: 10;
+}
+
+.shirt-right{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 45px;
+  right: 56px;
+  background-color: var(--shirt-color);
+  border-top: 3px solid black;
+  transform: rotate(26deg);
+  z-index: -8;
+}
+
+.shirt-right::after{
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: -20px;
+  width: 39px;
+  height: 16px;
+  border: none;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  background-color: inherit;
+  transform: rotate(34deg) skew(301deg, 7deg);
+  z-index: -11;
+}
+
+.shoulder-left{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 340px;
+  left: 30px;
+  border-radius: 115px 115px 0 0;
+  border: 3px solid black;
+  border-bottom: none;
+  background-color: var(--shirt-color);
+  transform: rotate(8deg);
+}
+
+.shoulder-left::after{
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: 34px;
+  width: 100px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  border-bottom: 3px solid black;
+  transform: rotate(13deg);
+}
+
+
+.shoulder-right{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 330px;
+  right: 10px;
+  border-radius: 100px 100px 0 0;
+  border: 3px solid black;
+  border-bottom: none;
+  background-color: var(--shirt-color);
+  transform: rotate(1deg);
+  z-index: -11;
+}
+
+.chest{
+  width: 194px;
+  height: 180px;
+  position: absolute;
+  bottom: -80px;
+  left: 60px;
+  border-radius: 50%;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  background-color: var(--shirt-color);
+  z-index: -10;
+}
+
+/* .wave{
+
+}
+
+.wave::after{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  background-color: var(--shirt-color);
+} */
+
+
+
 
