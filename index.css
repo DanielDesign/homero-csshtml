@@ -7,8 +7,8 @@
   --bg-color: #22C9EE;
 }
 
-/* Posiciones absolutas */
 :root{
+  --width-container: 300px;
   --pos-left-hair: 150px;
   --post-left-forehead: 102px;
   --pos-right-eye: 25px; 
@@ -18,10 +18,6 @@
   --pos-right-beard: 60px;
 }
 
-:root{
-  --rotate-default: 8deg;
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -29,27 +25,26 @@
 }
 
 body{
-  background-color: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-image: url('https://p4.wallpaperbetter.com/wallpaper/231/748/927/cartoon-the-simpsons-simpsons-bart-wallpaper-preview.jpg');
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/231/748/927/cartoon-the-simpsons-simpsons-bart-wallpaper-preview.jpg');
   background-repeat: no-repeat;
-  background-size: 100vw; */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   position: relative;
 }
 
 .container{
-  width: 300px;
+  width: var(--width-container);
   height: 400px;
-  margin-top: 180px;
+  margin: 0 auto ;
+  margin-top: 80px;
   border: 1px solid black;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
-  opacity: 0.8;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.88);
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.88);
-  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.88);
+  transition: 0.8s margin ease-in;
+  backdrop-filter: blur(10px);
 }
 
 .hair-top{
@@ -303,10 +298,8 @@ body{
   height: 85px;
   background-color: var(--skin-color);
   position: absolute;
-  /* top: 158px; */
   top: 243px;
   left: 115px;
-  /* bottom: 20px; */
   transform: rotate(8deg);
   z-index: -1;
   border-left: 3px solid black;
@@ -402,7 +395,6 @@ body{
   border: 3px solid transparent;
   border-right: 3px solid black;
   border-left: 3px solid black;
-  /* border-bottom: 3px solid black; */
 }
 
 .shirt-left::after{
@@ -516,20 +508,30 @@ body{
   z-index: -10;
 }
 
-/* .wave{
-
+h1{
+  color: rgba(15,244,205,0.8);
+  font-size: 54px;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 1px 2px rgba(255,255,255,0.5);
 }
 
-.wave::after{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 150px;
-  background-color: var(--shirt-color);
-} */
+@media only screen and (max-width: 935px){
+  .container{
+    margin: 60px auto;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    margin: 60px auto;
+  }
+}
+
+
+
+
 
 
 
