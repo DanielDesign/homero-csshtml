@@ -22,6 +22,7 @@
   box-sizing: border-box;
 }
 
+/* ultimo*/
 body{
   background-image: url('https://p4.wallpaperbetter.com/wallpaper/231/748/927/cartoon-the-simpsons-simpsons-bart-wallpaper-preview.jpg');
   background-repeat: no-repeat;
@@ -34,9 +35,8 @@ body{
 .container{
   width: 300px;
   height: 400px;
-  margin: 0 auto ;
-  margin-top: 80px;
-  border: 1px solid black;
+  margin: 80px auto 0;
+  border: 1px solid transparent;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -521,11 +521,6 @@ h1{
   }
 }
 
-@media only screen and (max-width: 600px){
-  .container{
-    margin: 60px auto;
-  }
-}
 
 
 
