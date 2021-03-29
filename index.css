@@ -4,7 +4,6 @@
   --shirt-color: #FDFDFD;
   --eyes-color: #FDFEF4;
   --hair-color: #011D2D;
-  --bg-color: #22C9EE;
 }
 
 :root{
@@ -412,7 +411,7 @@ body{
 .shirt-left::before{
   content: '';
   position: absolute;
-  top: -19px;
+  top: -17px;
   left: -3px;
   width: 90px;
   height: 17px;
